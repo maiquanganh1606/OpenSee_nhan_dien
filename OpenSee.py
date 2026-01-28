@@ -337,6 +337,8 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                         if name != "Unknown":
                             beauty_score = random.choice(["9/10", "10/10", "Sieu Pham!"])
                             display_text = f"{name} - {beauty_score}"
+                        else:
+                            display_text = 'Unknown'
 
                         # Vẽ hình chữ nhật (RGB)
                         cv2.rectangle(img_arr, (x, y), (x + w, y + h), color, 2)
