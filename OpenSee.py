@@ -350,4 +350,7 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                 if name!='Unknown':
                     st.success("😳😵‍💫😍  OpenSee đã bị quyến rũ bởi nhan sắc này 🤖")
                 else:
-                    st.warning("🤔 OpenSee chưa nhận ra bạn! /nHãy quay lại Menu 1 để thu thập dữ liệu, sau đó qua Menu 2 Train Model để OpenSee biết bạn nhé!😊")
+                    st.warning("""
+                    🤔 OpenSee chưa nhận ra bạn! 
+                    Hãy quay lại Menu 1 để thu thập dữ liệu, sau đó qua Menu 2 Train Model để OpenSee nhận ra bạn nhé!😊
+                    """)
