@@ -347,6 +347,6 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                     except:
                         pass
 
-                st.image(img_arr, caption="Kết quả nhận diện", width=1000)
+                st.image(img_arr, caption="Kết quả nhận diện", width=600)
                 if name!='Unknown':
                     st.success("😳😵‍💫😍  OpenSee đã bị quyến rũ bởi nhan sắc này 🤖")
