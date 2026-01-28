@@ -334,8 +334,9 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                             name = "Unknown"
                             color = (255, 0, 0)  # Đỏ (RGB)
 
-                        beauty_score = random.choice(["9/10", "10/10", "Sieu Pham!"])
-                        display_text = f"{name} - {beauty_score}"
+                        if name != "Unknown":
+                            beauty_score = random.choice(["9/10", "10/10", "Sieu Pham!"])
+                            display_text = f"{name} - {beauty_score}"
 
                         # Vẽ hình chữ nhật (RGB)
                         cv2.rectangle(img_arr, (x, y), (x + w, y + h), color, 2)
@@ -345,5 +346,5 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                         pass
 
                 st.image(img_arr, caption="Kết quả nhận diện", width=1000)
-                if not name=='Unknown':
+                if name!='Unknown':
                     st.success("😳😵‍💫😍  OpenSee đã bị quyến rũ bởi nhan sắc này 🤖")
