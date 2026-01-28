@@ -242,7 +242,7 @@ elif choice == "2. Quản lý & Huấn luyện":
         id_del = st.selectbox("Chọn Người muốn xóa VĨNH VIỄN:", list(names.keys()),
                               format_func=lambda x: f"ID {x}: {names[x]}", key='delete_user')
         if id_del == "0":
-            st.info("Không thể xóa ID 0 (Unknown).")
+            st.info("Không thể xóa ID 0 (Quang Anh).")
         else:
             if st.button(f"🔴 Xác nhận XÓA {names[id_del]}"):
                 all_files = os.listdir(DATASET_PATH)
