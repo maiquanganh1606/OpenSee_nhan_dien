@@ -346,7 +346,6 @@ elif choice == "3. Nhận diện (Chụp ảnh)":
                                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
                     except:
                         pass
-
-                st.image(img_arr, caption="Kết quả nhận diện", width=600)
+                st.image(cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB), caption="Kết quả", use_container_width=True)
                 if name!='Unknown':
                     st.success("😳😵‍💫😍  OpenSee đã bị quyến rũ bởi nhan sắc này 🤖")
