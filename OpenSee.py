@@ -145,7 +145,7 @@ if choice == "1. Thu thập dữ liệu":
     st.header("📸 Thu thập dữ liệu")
     col1, col2 = st.columns(2)
     with col1:
-        name_input = st.text_input("Tên người mới (hiện tại Tiếng Việt còn đang bị lỗi, nhập không dấu bạn nhé)   /nVD:Nguyen Van A):")
+        name_input = st.text_input("Hiện tại Tiếng Việt còn đang bị lỗi, nhập không dấu bạn nhé! VD:Nguyen Van A . Tên người mới:")
     if 'new_id' not in st.session_state: st.session_state.new_id = get_new_id()
 
     if name_input:
